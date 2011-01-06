@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="AutoDroid Preferences">
+    <PreferenceCategory>
+        <EditTextPreference
+                android:name="Away message"
+                android:summary="Set your SMS auto response."
+                android:defaultValue="I'm currently unavailable."
+                android:title="Away message"
+                android:key="awayMsgPref"/>
+    </PreferenceCategory>
+</PreferenceScreen>
