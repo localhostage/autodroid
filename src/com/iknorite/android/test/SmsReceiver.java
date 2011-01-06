@@ -62,7 +62,7 @@ public class SmsReceiver extends BroadcastReceiver
     void sendSms(Context context, String dest) {
 
         if (isEnabled) {
-            Toast.makeText(context, "AutoDroid: enabled", Toast.LENGTH_LONG).show();
+            // Toast.makeText(context, "AutoDroid: enabled", Toast.LENGTH_LONG).show();
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 
             // Get the xml/preferences.xml preferences
@@ -73,7 +73,7 @@ public class SmsReceiver extends BroadcastReceiver
             SmsManager sms = SmsManager.getDefault();
             sms.sendTextMessage(dest, null, awayMsg, pi, null);
         } else {
-            Toast.makeText(context, "AutoDroid: disabled", Toast.LENGTH_LONG).show();
+            // Toast.makeText(context, "AutoDroid: disabled", Toast.LENGTH_LONG).show();
         }
     }
 }
